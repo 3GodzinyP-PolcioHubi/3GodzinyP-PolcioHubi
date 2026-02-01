@@ -128,6 +128,7 @@ git commit -m "feat: dodać nową funkcję"
 ```
 
 **Format commitów** (Conventional Commits):
+
 - `feat:` - nowa funkcjonalność
 - `fix:` - naprawa błędu
 - `chore:` - zadania pomocnicze
@@ -166,15 +167,15 @@ git push --force-with-lease
 
 ## 🔧 Przydatne komendy
 
-| Komenda | Opis |
-|---------|------|
-| `npm run dev` | Uruchom w trybie development |
-| `npm run build` | Zbuduj produkcję |
-| `npm run lint` | Sprawdź kod (ESLint) |
-| `npm run lint:fix` | Napraw automatycznie co się da |
-| `npm run format` | Sformatuj kod (Prettier) |
-| `npm run format:check` | Sprawdź formatowanie |
-| `npm run test` | Uruchom testy |
+| Komenda                | Opis                           |
+| ---------------------- | ------------------------------ |
+| `npm run dev`          | Uruchom w trybie development   |
+| `npm run build`        | Zbuduj produkcję               |
+| `npm run lint`         | Sprawdź kod (ESLint)           |
+| `npm run lint:fix`     | Napraw automatycznie co się da |
+| `npm run format`       | Sformatuj kod (Prettier)       |
+| `npm run format:check` | Sprawdź formatowanie           |
+| `npm run test`         | Uruchom testy                  |
 
 ## 📝 Konwencje
 
@@ -194,6 +195,7 @@ git lfs pull
 ```
 
 **Limity:**
+
 - Pliki > 50 MB → Git LFS (automatyczne dla .mp4, .mov, etc.)
 - Surowe materiały → zewnętrzny storage (Google Drive / S3)
 
@@ -205,4 +207,3 @@ git lfs pull
 ---
 
 Made with ❤️ by Video Coders Team
-

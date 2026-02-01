@@ -52,13 +52,13 @@ VS Code zapyta automatycznie o instalację rozszerzeń z `.vscode/extensions.jso
 
 ### Struktura branchy
 
-| Branch | Cel | Chroniony |
-|--------|-----|-----------|
-| `main` | Produkcja, stabilne wersje | ✅ |
-| `dev` | Integracja, testy | ✅ |
-| `feature/*` | Nowe funkcje | ❌ |
-| `fix/*` | Naprawy bugów | ❌ |
-| `chore/*` | Zadania pomocnicze | ❌ |
+| Branch      | Cel                        | Chroniony |
+| ----------- | -------------------------- | --------- |
+| `main`      | Produkcja, stabilne wersje | ✅        |
+| `dev`       | Integracja, testy          | ✅        |
+| `feature/*` | Nowe funkcje               | ❌        |
+| `fix/*`     | Naprawy bugów              | ❌        |
+| `chore/*`   | Zadania pomocnicze         | ❌        |
 
 ### Tworzenie nowego brancha
 
@@ -76,12 +76,14 @@ git checkout -b fix/opis-buga
 ### Nazewnictwo branchy
 
 ✅ **Dobre:**
+
 - `feature/user-login`
 - `feature/video-uploader`
 - `fix/button-color`
 - `chore/update-deps`
 
 ❌ **Złe:**
+
 - `moja-praca` (brak prefiksu)
 - `Feature/Login` (wielkie litery)
 - `feature/add_new_stuff` (underscore zamiast dash)
@@ -102,19 +104,20 @@ Używamy [Conventional Commits](https://www.conventionalcommits.org/).
 
 ### Typy commitów
 
-| Typ | Kiedy używać | Przykład |
-|-----|--------------|----------|
-| `feat` | Nowa funkcja | `feat: dodać formularz logowania` |
-| `fix` | Naprawa buga | `fix: naprawić walidację emaila` |
-| `docs` | Dokumentacja | `docs: zaktualizować README` |
-| `style` | Formatowanie (nie CSS!) | `style: dodać brakujące średniki` |
-| `refactor` | Refaktoryzacja | `refactor: wydzielić helper do utils` |
-| `test` | Testy | `test: dodać testy dla AuthService` |
-| `chore` | Zadania pomocnicze | `chore: zaktualizować zależności` |
+| Typ        | Kiedy używać            | Przykład                              |
+| ---------- | ----------------------- | ------------------------------------- |
+| `feat`     | Nowa funkcja            | `feat: dodać formularz logowania`     |
+| `fix`      | Naprawa buga            | `fix: naprawić walidację emaila`      |
+| `docs`     | Dokumentacja            | `docs: zaktualizować README`          |
+| `style`    | Formatowanie (nie CSS!) | `style: dodać brakujące średniki`     |
+| `refactor` | Refaktoryzacja          | `refactor: wydzielić helper do utils` |
+| `test`     | Testy                   | `test: dodać testy dla AuthService`   |
+| `chore`    | Zadania pomocnicze      | `chore: zaktualizować zależności`     |
 
 ### Przykłady
 
 ✅ **Dobre:**
+
 ```bash
 git commit -m "feat: dodać upload plików video"
 git commit -m "fix: naprawić crash przy pustym formularzu"
@@ -122,6 +125,7 @@ git commit -m "chore(deps): zaktualizować prettier do 3.0"
 ```
 
 ❌ **Złe:**
+
 ```bash
 git commit -m "poprawki"           # Zbyt ogólne
 git commit -m "WIP"                # Nie commituj WIP
@@ -133,17 +137,20 @@ git commit -m "Fix stuff"          # Po angielsku gdy reszta po polsku
 ### Przed utworzeniem PR
 
 1. **Zsynchronizuj z dev:**
+
    ```bash
    git fetch origin
    git rebase origin/dev
    ```
 
 2. **Upewnij się że lint przechodzi:**
+
    ```bash
    npm run lint
    ```
 
 3. **Sprawdź formatowanie:**
+
    ```bash
    npm run format:check
    ```
@@ -156,6 +163,7 @@ git commit -m "Fix stuff"          # Po angielsku gdy reszta po polsku
 ### Tworzenie PR
 
 1. Push brancha:
+
    ```bash
    git push -u origin feature/moja-funkcja
    ```
@@ -172,6 +180,7 @@ git commit -m "Fix stuff"          # Po angielsku gdy reszta po polsku
 ### Po review
 
 Jeśli są uwagi:
+
 ```bash
 # Wprowadź zmiany
 git add .
@@ -201,6 +210,7 @@ git push
 ### Merge
 
 Po aprovacie:
+
 1. Kliknij "Squash and merge" (dla czystej historii)
 2. Upewnij się że tytuł merga jest sensowny
 3. Usuń branch źródłowy (GitHub zrobi to automatycznie)
