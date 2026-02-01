@@ -6,17 +6,17 @@ module.exports = {
       2,
       'always',
       [
-        'feat',     // Nowa funkcja
-        'fix',      // Naprawa buga
-        'docs',     // Dokumentacja
-        'style',    // Formatowanie (nie CSS!)
+        'feat', // Nowa funkcja
+        'fix', // Naprawa buga
+        'docs', // Dokumentacja
+        'style', // Formatowanie (nie CSS!)
         'refactor', // Refaktoryzacja
-        'test',     // Testy
-        'chore',    // Zadania pomocnicze
-        'perf',     // Optymalizacja wydajności
-        'ci',       // CI/CD
-        'build',    // Build system
-        'revert',   // Cofnięcie zmian
+        'test', // Testy
+        'chore', // Zadania pomocnicze
+        'perf', // Optymalizacja wydajności
+        'ci', // CI/CD
+        'build', // Build system
+        'revert', // Cofnięcie zmian
       ],
     ],
     // Maksymalna długość tytułu
