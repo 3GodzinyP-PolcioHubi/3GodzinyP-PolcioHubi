@@ -1,0 +1,40 @@
+{
+  "name": "video-coders-project",
+  "version": "0.0.1",
+  "description": "Projekt video coders team",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "echo \"Dodaj tutaj komendę dev\" && exit 0",
+    "build": "echo \"Dodaj tutaj komendę build\" && exit 0",
+    "start": "echo \"Dodaj tutaj komendę start\" && exit 0",
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
+    "lint:fix": "eslint . --ext .js,.ts,.jsx,.tsx --fix",
+    "format": "prettier --write \"**/*.{js,ts,jsx,tsx,json,md,css,scss}\"",
+    "format:check": "prettier --check \"**/*.{js,ts,jsx,tsx,json,md,css,scss}\"",
+    "test": "echo \"Brak testów - dodaj framework testowy\" && exit 0",
+    "prepare": "husky",
+    "ci": "npm run lint && npm run format:check && npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.0",
+    "@commitlint/config-conventional": "^18.4.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css,scss}": [
+      "prettier --write"
+    ]
+  }
+}
